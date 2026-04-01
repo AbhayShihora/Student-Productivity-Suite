@@ -1,0 +1,150 @@
+:root {
+  --bg: #f5f7fb;
+  --card: #fff;
+  --accent: #2b6df6;
+  --muted: #6b7280;
+  --text: #111827;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Inter, Segoe UI, Arial, Helvetica, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 18px;
+  background: var(--card);
+}
+.module {
+  max-width: 900px;
+  margin: 18px auto;
+  padding: 16px;
+}
+
+.section {
+  max-width: 720px;
+  margin: 14px auto;
+  background: var(--card);
+  padding: 16px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+.section h3 {
+  margin: 0 0 12px;
+  font-size: 18px;
+}
+
+.input-row {
+  display: flex;
+  gap: 10px;
+}
+.input-row input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #e6e9f2;
+  background: transparent;
+  font-size: 15px;
+}
+.input-row input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+.input-row button {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 0;
+  background: var(--accent);
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.actions-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+.small {
+  background: #eef2ff;
+  color: var(--accent);
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 0;
+  cursor: pointer;
+}
+.muted {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.tasks-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 14px;
+}
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 10px;
+  border-radius: 8px;
+  background: var(--card);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+.task-left {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex: 1;
+}
+.task-left label {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+  width: 100%;
+}
+.task-left input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+}
+.task-text {
+  flex: 1;
+  word-break: break-word;
+}
+.task-text.done {
+  text-decoration: line-through;
+  color: var(--muted);
+}
+.task-actions {
+  display: flex;
+  gap: 8px;
+}
+.task-actions button {
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 0;
+  cursor: pointer;
+  font-weight: 700;
+}
+.task-actions .edit {
+  background: #f1f5ff;
+  color: var(--accent);
+}
+.task-actions .del {
+  background: #fff0f0;
+  color: #c43a3a;
+}
+

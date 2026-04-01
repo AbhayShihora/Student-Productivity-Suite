@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f2f2;
+    padding: 20px;
+    position: relative;
+}
+
+.home-btn {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    padding: 8px 15px;
+    background: #444;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    width: 90%;
+    margin: 60px auto;
+    border: 1px solid #ccc;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"], input[type="time"] {
+    width: 100%;
+    padding: 6px;
+    border: 1px solid #ccc;
+}
+
+.days-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 8px 15px;
+    background: #0284c7;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table, th, td {
+    border: 1px solid #999;
+    text-align: center;
+    
+}
+
+th {
+    background: #0284c7;
+    color: white;
+}
+.row-actions {
+  display:inline-flex;
+  gap:6px;
+}
+
+.row-actions button {
+  padding:5px 8px;
+  font-size:13px;
+  border-radius:4px;
+  border:1px solid #666;
+  background:#fff;
+  cursor:pointer;
+}
+
+.row-actions .edit { color:#0a74da; border-color:#0a74da; }
+.row-actions .delete { color:#c0392b; border-color:#c0392b; }

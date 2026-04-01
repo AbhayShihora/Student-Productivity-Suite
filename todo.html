@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>To-Do — Student Productivity Suite</title>
+  <link rel="stylesheet" href="css/todo.css" />
+</head>
+<body>
+  <header class="nav">
+    <h1>To-Do List</h1>
+    <nav><a href="Home.html">Home</a></nav>
+  </header>
+
+  <main class="module">
+    <section class="section">
+      <h3>Add Task</h3>
+
+      <div class="input-row">
+        <input id="taskText" placeholder="What do you want to do?" autocomplete="off" />
+        <button id="addTask">Add</button>
+      </div>
+
+      <div class="actions-row">
+        <button id="clearTasks" class="small">Clear All</button>
+        <span id="taskCount" class="muted"></span>
+      </div>
+    </section>
+
+    <section class="section">
+      <h3>Tasks</h3>
+      <div id="tasks" class="tasks-list"></div>
+    </section>
+  </main>
+
+  <script src="js/todo.js"></script>
+</body>
+</html>

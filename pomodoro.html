@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>User Set Pomodoro Timer</title>
+  <link rel="stylesheet" href="css/pomodoro.css">
+</head>
+<body>
+
+<div class="page-wrap">
+
+  <header class="nav">
+    <h1>Pomodoro Timer</h1>
+    <nav><a href="Home.html">Home</a></nav>
+  </header>
+
+  <main class="module">
+    <section class="section">
+
+      <h3>Set Your Pomodoro Time</h3>
+
+      <div id="timerDisplay">00:00</div>
+
+      <div class="settings">
+        <label>
+          Minutes:
+          <input type="number" id="pomodoroInput" min="1" value="10">
+        </label>
+        <button id="applyTime" class="small">Set Time</button>
+      </div>
+
+      <div class="row">
+        <button id="start">Start</button>
+        <button id="pause" class="small">Pause</button>
+        <button id="reset" class="small">Reset</button>
+      </div>
+
+      <p><small>Enter any minutes you want and click <b>Set Time</b>.</small></p>
+
+    </section>
+  </main>
+
+</div>
+
+<script src="js/pomodoro.js"></script>
+</body>
+</html>
