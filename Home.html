@@ -1,104 +1,113 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Student Productivity Suite — Dashboard</title>
+  <title>Dashboard — StudentSuite</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <!-- top bar -->
-  <header class="topbar">
-    <div class="left">
-     
-      <h1  class="brand">Student Productivity Suite</h1>
+
+  <aside class="sidebar">
+    <div class="sidebar-header">
+      <div class="brand-icon">A</div>
+      <h1 class="brand-text">StudentSuite</h1>
     </div>
-    <nav><a href="index.html"><u>Log Out</u></a></nav>
-  </header>
 
-<br>  
+    <nav class="sidebar-nav">
+      <a href="Home.html" class="nav-link active"><span>📊</span> Dashboard</a>
+      <a href="notes.html" class="nav-link"><span>📝</span> Notes</a>
+      <a href="todo.html" class="nav-link"><span>✅</span> To-Do</a>
+      <a href="quiz.html" class="nav-link"><span>🎯</span> Quiz</a>
+      <a href="timetable.html" class="nav-link"><span>📅</span> Timetable</a>
+      <a href="pomodoro.html" class="nav-link"><span>⏱️</span> Pomodoro</a>
+      <a href="flashcards.html" class="nav-link"><span>🗂️</span> Flashcards</a>
+    </nav>
 
-    <section class="layout layout-sidebar" aria-labelledby="sidebarTitle" hidden>
-
-      <aside class="sidebar">
-        <nav>
-          <a href="Home.html" class="nav-link active">Dashboard</a>
-          <a href="notes.html" class="nav-link">Notes</a>
-          <a href="todo.html" class="nav-link">To-Do</a>
-          <a href="quiz.html" class="nav-link">Quiz</a>
-          <a href="timetable.html" class="nav-link">Timetable</a>
-          <a href="pomodoro.html" class="nav-link">Pomodoro</a>
-          <a href="flashcards.html" class="nav-link">Flashcards</a>
-        </nav><br>
-        <div class="sidebar-foot">
-          <small>Study progress</small>
-          <div class="progress"><div class="progbar" style="width:64%"></div></div>
+    <div class="sidebar-footer">
+      <div class="progress-container">
+        <div class="progress-labels">
+          <small>Study Goal</small>
+          <small>64%</small>
         </div>
-      </aside>
-      
-      <section class="content">
-        <h2>Today</h2>
-        <div class="card-row">
-          <div class="small-card">
-            <strong>2</strong>
-            <span>Due tasks</span>
+        <div class="progress-bar-bg">
+          <div class="progress-bar-fill" style="width:64%"></div>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <main class="main-content">
+    <header class="topbar">
+      <div class="search-bar">
+        <input type="text" placeholder="Search tasks, notes...">
+      </div>
+      <div class="user-profile">
+        <span class="user-name">Abhay Shihora</span>
+        <a href="index.html" class="logout-btn">Log Out</a>
+      </div>
+    </header>
+
+    <section class="dashboard-body">
+      <header class="section-header">
+        <h2>Overview</h2>
+        <p class="subtitle">Here is what's happening today.</p>
+      </header>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <span class="stat-value">2</span>
+          <span class="stat-label">Due Tasks</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value">1</span>
+          <span class="stat-label">New Notes</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-value">3</span>
+          <span class="stat-label">Sessions</span>
+        </div>
+      </div>
+
+      <div class="dashboard-grid">
+        <div class="main-panel">
+          <div class="card focus-banner">
+            <div class="focus-content">
+              <h3>Next up: JS Project</h3>
+              <p>Submit your final requirements before 2 PM today.</p>
+              <button class="btn-primary">View Task</button>
+            </div>
           </div>
-          <div class="small-card">
-            <strong>1</strong>
-            <span>New notes</span>
+
+          <div class="quick-actions">
+            <h3>Quick Actions</h3>
+            <div class="action-grid">
+              <a href="pomodoro.html" class="action-card">
+                <span class="icon">⏱️</span>
+                <h4>Start Focus</h4>
+                <p>Pomodoro session</p>
+              </a>
+              <a href="flashcards.html" class="action-card">
+                <span class="icon">🗂️</span>
+                <h4>Review</h4>
+                <p>Flashcard set</p>
+              </a>
+              <a href="quiz.html" class="action-card">
+                <span class="icon">🎯</span>
+                <h4>Practice</h4>
+                <p>Short MCQ</p>
+              </a>
+            </div>
           </div>
-          <div class="small-card">
-            <strong>3</strong>
-            <span>Study sessions</span>
-          </div>
-        </div>
-
-        <div class="big-card">
-          <h3>Next Task</h3>
-          <p>Finish JS Project — submit before 2 PM.</p>
-        </div>
-
-        <div class="big-card">
-          <h3>Quick Links</h3>
-          <div class="links">
-            <a href="notes.html">Notes  </a>|
-            <a href="todo.html">To-Do  </a>|
-            <a href="quiz.html">Quiz  </a>|
-            <a href="pomodoro.html">Pomodoro</a>
-          </div>
-        </div>
-      </section>
-    </section> 
-
-    <br>
-    <section class="layout layout-focus" aria-labelledby="focusTitle" >
-      <div class="focus-wrap">
-        <div class="focus-card">
-          <h3>Start Focus</h3>
-          <p>Begin a Pomodoro session now.</p>
-          <a href="pomodoro.html" class="cta">Start →</a>
-        </div>
-
-        <div class="focus-card">
-          <h3>Review Flashcards</h3>
-          <p>Quick 10-min revision set.</p>
-          <a href="flashcards.html" class="cta">Review →</a>
-        </div>
-
-        <div class="focus-card">
-          <h3>Practice Quiz</h3>
-          <p>Short MCQ practice.</p>
-          <a href="quiz.html" class="cta">Practice →</a>
         </div>
       </div>
     </section>
+
+    <footer class="main-footer">
+      <p>© 2026 Student Productivity Suite • Built by Abhay Shihora</p>
+    </footer>
   </main>
 
-  <footer class="footer">
-    <small>© Student Productivity Suite</small><br>
-    <small>Created By @Abhay Shihora</small>
-  </footer>
-  <br><br><br><br>
   <script src="js/dashboard.js"></script>
 </body>
 </html>
