@@ -1,65 +1,130 @@
+:root {
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+  --bg: #f8fafc;
+  --text-main: #1e293b;
+  --text-muted: #64748b;
+  --white: #ffffff;
+  --border: #e2e8f0;
+}
+
 body {
   margin: 0;
-  background: #f4f6fb;
-  font-family: Inter, Arial;
+  background-color: var(--bg);
+  background-image: radial-gradient(circle at 2px 2px, #e2e8f0 1px, transparent 0);
+  background-size: 40px 40px; /* Subtle grid pattern */
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  color: var(--text-main);
 }
 
 .auth-box {
-  width: 340px;
-  background: white;
-  padding: 26px;
-  border-radius: 14px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  width: 100%;
+  max-width: 400px;
+  background: var(--white);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--border);
   text-align: center;
 }
 
-.auth-box h2 {
-  margin-bottom: 18px;
+.brand-logo {
+  width: 48px;
+  height: 48px;
+  background: var(--primary);
+  color: white;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 24px;
+  margin: 0 auto 20px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0 0 8px;
+  letter-spacing: -0.5px;
+}
+
+.subtitle {
+  color: var(--text-muted);
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.input-group {
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.input-group label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: var(--text-main);
 }
 
 input {
   width: 100%;
-  padding: 12px;
-  margin: 8px 0;
-  border: 1px solid #ddd;
+  padding: 12px 14px;
+  box-sizing: border-box;
+  border: 1px solid var(--border);
   border-radius: 8px;
-  font-size: 14px;
+  font-size: 15px;
+  transition: all 0.2s;
+  outline: none;
+}
+
+input:focus {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.1);
 }
 
 button {
   width: 100%;
   padding: 12px;
-  margin-top: 10px;
-  background: #2b6df6;
+  margin-top: 8px;
+  background: var(--primary);
   color: white;
   border: none;
   font-size: 15px;
+  font-weight: 600;
   border-radius: 8px;
   cursor: pointer;
+  transition: background 0.2s;
 }
 
 button:hover {
-  background: #1f4dc4;
+  background: var(--primary-hover);
 }
 
 .switch-text {
-  margin-top: 12px;
+  margin-top: 20px;
   font-size: 14px;
-  color: #555;
+  color: var(--text-muted);
 }
 
-.switch-text span {
-  color: #2b6df6;
+#switchForm {
+  color: var(--primary);
   cursor: pointer;
-  font-weight: bold;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#switchForm:hover {
+  text-decoration: underline;
 }
 
 #msg {
-  margin-top: 10px;
-  font-size: 14px;
-  color: red;
+  margin-top: 16px;
+  font-size: 13px;
+  min-height: 1.2em;
 }

@@ -3,28 +3,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login / Register - Student Productivity Suite</title>
-  <link rel="stylesheet" href=css/login_regi.css>
+  <title>Welcome - StudentSuite</title>
+  <link rel="stylesheet" href="css/login_regi.css">
 </head>
 <body>
 
-  <div class="auth-box">
+  <div class="auth-container">
+    <div class="auth-box">
+      <div class="brand-logo">S</div>
+      <h2 id="formTitle">Welcome back</h2>
+      <p class="subtitle" id="formSubtitle">Enter your details to access your dashboard.</p>
 
-    <h2 id="formTitle">Login</h2>
+      <div class="input-group">
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="e.g. alex_doe">
+      </div>
 
-    <input type="text" id="username" placeholder="Username">
-    <input type="password" id="password" placeholder="Password">
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="••••••••">
+      </div>
 
-    <button id="submitBtn">Login</button>
+      <button id="submitBtn">Sign In</button>
 
-    <p class="switch-text">
-      Don’t have an account? <span id="switchForm">Register</span>
-    </p>
+      <p class="switch-text">
+        <span id="switchHint">Don't have an account?</span> 
+        <span id="switchForm">Create one</span>
+      </p>
 
-    <p id="msg"></p>
-
+      <p id="msg"></p>
+    </div>
   </div>
 
-<script src="js/login_regi.js"></script>
+  <script src="js/login_regi.js"></script>
 </body>
 </html>
