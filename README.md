@@ -2,7 +2,7 @@
 
 A web-based Student Productivity Suite designed to help students organize their studies, manage time effectively, and improve overall learning efficiency.
 
----
+------------------------------------------------
 
 ## 🚀 Features
 
@@ -21,7 +21,7 @@ A web-based Student Productivity Suite designed to help students organize their 
 - 🧠 **Flashcards Module**  
   Create and review flashcards for quick revision.
 
----
+------------------------------------------------
 
 ## 🛠️ Technologies Used
 
@@ -30,7 +30,7 @@ A web-based Student Productivity Suite designed to help students organize their 
 - **JavaScript** – Logic and interactivity  
 - **LocalStorage** – Data persistence in browser  
 
----
+------------------------------------------------
 
 ## 💡 How It Works
 
@@ -39,7 +39,7 @@ A web-based Student Productivity Suite designed to help students organize their 
 3. Add and manage your study data  
 4. All data is automatically saved using LocalStorage  
 
----
+-----------------------------------------------
 
 ## 📂 Project Structure
 
@@ -58,13 +58,13 @@ Student-Productivity-Suite/
 
 ````
 
----
+-------------------------------------------
 
 ## 📸 Screenshots
 
 _ Here is screenshots _
 
----
+------------------------------------------
 
 
 2. Open the folder:
@@ -77,7 +77,7 @@ _ Here is screenshots _
 
    * Open `index.html` in your browser
 
----
+-------------------------------------
 
 ## 🎯 Future Enhancements
 
@@ -86,20 +86,14 @@ _ Here is screenshots _
 * 📱 Mobile responsive improvements
 * 🤖 AI-based study recommendations
 
----
+---------------------------------------
 
 ## 🤝 Contributing
 
 Contributions are welcome!
 Feel free to fork this repo and submit a pull request.
 
----
-
-## 📄 License
-
-This project is open-source and available under the **MIT License**.
-
------------------------------
+----------------------------------------
 
 ## 👨‍💻 Author
 
